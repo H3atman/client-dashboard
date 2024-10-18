@@ -21,9 +21,10 @@ To set up the Copilot App KPI Dashboard, follow these steps:
 
 ## Cheat Sheets
 
-create file
-.env.local and inside that file enter the API key from Copilot
-COPILOT_API_KEY=7bce8d0ab5d041a2a031bb4248cda3df.a8feb7ca64774110
+create file .env.local in the root folder and inside that file enter the API key from Copilot
+```
+COPILOT_API_KEY=<API_KEY>
+```
 
 ```
 yarn install
