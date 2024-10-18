@@ -26,18 +26,22 @@ create file .env.local in the root folder and inside that file enter the API key
 COPILOT_API_KEY=<API_KEY>
 ```
 
+Run the command below to install the app
 ```
 yarn install
 ```
 
+Run the command below to run the app in the localhost:3000
 ```
 yarn dev
 ```
+
+Import the code from v0.dev
 ```
 npx shadcn@latest add "<v0.dev_import_to_Codebase_link>"
 ```
-***to import the code from v0.dev***
 
-***edit the D:\.FirmOS\Copilot_Custom_Apps\custom-app-base\src\app\page.tsx to show the Dashboard***
+
+***edit the cd \custom-app-base\src\app\page.tsx to show the Dashboard***
 
 Made with ❤️ by the FirmOS Dev Team
