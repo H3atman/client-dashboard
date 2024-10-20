@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "COPILOT_ENV=local next dev",
-    "build": "next build",
+    "build": "COPILOT_ENV=local next build",
     "start": "next start",
     "lint": "next lint"
   },
