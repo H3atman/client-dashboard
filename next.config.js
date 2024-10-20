@@ -26,4 +26,24 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+
+module.exports = {
+  experimental: {
+    optimizeCss: true,
+  },
+  webpack: (config, { isServer }) => {
+    // Only run on client-side
+    if (!isServer) {
+      config.optimization.splitChunks.cacheGroups = {
+        ...config.optimization.splitChunks.cacheGroups,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      };
+    }
+    return config;
+  },
+};
